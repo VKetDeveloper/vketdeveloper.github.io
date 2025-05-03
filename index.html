@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VketREAL有志開発チーム on Github</title>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { font-family: 'Noto Sans JP', sans-serif; background: #f8faff; color: #333; display: flex; flex-direction: column; min-height: 100vh; }
+        header {
+            flex-shrink: 0; display: flex; justify-content: space-between; align-items: center;
+            padding: 0 20px; height: 60px; background: white; box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky; top: 0; z-index: 1000;
+        }
+        .logo { font-size: 24px; font-weight: bold; color: #0d6efd; }
+        main { flex: 1; padding: 20px; width: 100%; }
+        .section {
+            background: white; padding: 30px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+        @media (max-width: 768px) {
+        .section {
+            width: 95%; /* 小さい画面では幅を広げる */
+        }
+        }
+        .section:last-child {
+            margin-bottom: 0;
+        }
+        .section-title {
+            font-size: 20px; font-weight: bold; color: #333; margin-bottom: 15px;
+            border-bottom: 2px solid #eee; padding-bottom: 10px;
+        }
+        footer {
+            flex-shrink: 0; background: #222; color: #aaa; text-align: center;
+            font-size: 12px; padding: 30px 20px;
+        }
+        footer a { color: #aaa; margin: 0 10px; text-decoration: none; }
+        .team-members {
+            display: flex; flex-wrap: wrap; gap: 20px;
+        }
+        .team-member-card {
+            background: #fff; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            padding: 20px; width: calc(33.33% - 20px); min-width: 200px;
+        }
+        .team-member-name {
+            font-size: 16px; font-weight: bold; margin-bottom: 5px;
+        }
+        .team-member-role {
+            color: #777; font-size: 14px;
+        }
+        .tech-stack-list {
+            display: flex; flex-wrap: wrap; gap: 10px;
+            margin-top: 10px;
+        }
+        .tech-stack-item {
+            background: #eef; color: #333; padding: 5px 10px; border-radius: 5px;
+            font-size: 14px;
+        }
+        .tns-outer {
+            padding: 20px 0;
+        }
+        .slide-item {
+            text-align: center;
+            height: 200px; /* スライダーの高さ */
+            line-height: 200px;
+            background: #eee;
+            margin: 0 10px;
+        }
+        .slide-item img {
+            max-width: 100%;
+            max-height: 100%;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <el-container style="height: auto;">
+        <header>
+            <div class="logo">VketREAL有志開発チーム on Github</div>
+        </header>
+        <!-- <div class="tns-outer">
+            <vue-tiny-slider :settings="sliderSettings">
+                <div class="slide-item"><img src="https://via.placeholder.com/300/007bff/fff?Text=Image+1"></div>
+                <div class="slide-item"><img src="https://via.placeholder.com/300/28a745/fff?Text=Image+2"></div>
+                <div class="slide-item"><img src="https://via.placeholder.com/300/dc3545/fff?Text=Image+3"></div>
+                <div class="slide-item"><img src="https://via.placeholder.com/300/ffc107/000?Text=Image+4"></div>
+                <div class="slide-item"><img src="https://via.placeholder.com/300/17a2b8/fff?Text=Image+5"></div>
+            </vue-tiny-slider>
+        </div> -->
+        <el-main style="padding: 20px;">
+            <div class="section">
+                <h2 class="section-title">私たちのミッション</h2>
+                <p>ユーザーもスタッフも、Vketに関わるすべての人が気持ちよく活動場所であること。<br />
+                    それが、私たちが何より大切にしていることです。<br />
+                    <br />
+                    多様性を重視する有志開発チームでは、「あなたらしさ」を歓迎します。<br />
+                    異なるスキルを持った人々が集まることは、生産性と革新性を高めることにつながるからです。<br />
+                    あなたが動けば、あなたの未来も、Vketの未来も変わる。 この環境をどう生かすかは、あなた次第です。<br />
+                    バーチャル⇆リアル 世界を開く“鍵”になってください。</p>
+            </div>
+<!-- 
+            <div class="section">
+                <h2 class="section-title">チーム紹介</h2>
+                <div class="team-members">
+                    <div class="team-member-card">
+                        <h3 class="team-member-name">山田 太郎</h3>
+                        <p class="team-member-role">バックエンドエンジニア</p>
+                    </div>
+                    <div class="team-member-card">
+                        <h3 class="team-member-name">佐藤 花子</h3>
+                        <p class="team-member-role">フロントエンドエンジニア</p>
+                    </div>
+                    <div class="team-member-card">
+                        <h3 class="team-member-name">田中 一郎</h3>
+                        <p class="team-member-role">インフラエンジニア</p>
+                    </div>
+                    <div class="team-member-card">
+                        <h3 class="team-member-name">鈴木 さくら</h3>
+                        <p class="team-member-role">プロジェクトマネージャー</p>
+                    </div>
+                    <div class="team-member-card">
+                        <h3 class="team-member-name">高橋 健太</h3>
+                        <p class="team-member-role">UI/UXデザイナー</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">技術スタック</h2>
+                <div class="tech-stack-list">
+                    <span class="tech-stack-item">Java</span>
+                    <span class="tech-stack-item">Python</span>
+                    <span class="tech-stack-item">React</span>
+                    <span class="tech-stack-item">Vue.js</span>
+                    <span class="tech-stack-item">AWS</span>
+                    <span class="tech-stack-item">GCP</span>
+                    <span class="tech-stack-item">Docker</span>
+                    <span class="tech-stack-item">Kubernetes</span>
+                    <span class="tech-stack-item">MySQL</span>
+                    <span class="tech-stack-item">PostgreSQL</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">お問い合わせ</h2>
+                <p>開発部門へのお問い合わせは、下記のメールアドレスまでご連絡ください。</p>
+                <p><a href="mailto:dev@example.com">dev@example.com</a></p> 
+            </div>-->
+        </el-main>
+        <footer>
+            <!-- <div>
+                <a href="#">利用規約</a> |
+                <a href="#">プライバシーポリシー</a> |
+                <a href="#">お問い合わせ</a>
+            </div> -->
+            <div>Copyright © 2025 VketREAL Development Department. All Rights Reserved.</div>
+        </footer>
+    </el-container>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue-tiny-slider@2.0.0-beta.3/dist/vue-tiny-slider.umd.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vue-tiny-slider@2.0.0-beta.3/dist/vue-tiny-slider.css">
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            sliderSettings: {
+                center: true,
+                items: 3,
+                slideBy: 1,
+                autoplay: false,
+                mouseDrag: true,
+                controls: false,
+                nav: true,
+                responsive: {
+                    640: {
+                        items: 3,
+                    },
+                    480: {
+                        items: 1,
+                        nav: false,
+                    }
+                }
+            }
+        },
+        components: {
+            'vue-tiny-slider': VueTinySlider
+        }
+    });
+</script>
+</body>
+</html>
