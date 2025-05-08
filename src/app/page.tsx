@@ -44,9 +44,6 @@ const Home: React.FC = () => {
             VketREALの開発チームは、Vketのリアルイベントを支えるために、様々な技術を駆使して開発を行っています。<br />
             私たちは、Vketのリアルイベントをより良いものにするために、日々努力しています。
           </Section>
-          <Section title="実績">
-            <h3>準備中</h3>
-          </Section>
         </main>
         <Footer />
       </div>
