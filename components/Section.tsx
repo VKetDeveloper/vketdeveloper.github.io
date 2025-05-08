@@ -1,18 +1,15 @@
-// components/Section.tsx
-
 import React from 'react';
 
-export interface SectionProps {
+export interface SectionProps extends React.HTMLAttributes<HTMLElement> {
   title: string;
   children: React.ReactNode;
-  style?: React.CSSProperties; // ← これを追加
 }
 
-const Section: React.FC<SectionProps> = ({ title, children, style }) => {
+const Section: React.FC<SectionProps> = ({ title, children, className = '', style }) => {
   return (
-    <section style={style}>
-      <h2>{title}</h2>
-      <div>{children}</div>
+    <section className={`section ${className}`} style={style}>
+      <h2 className="section-title">{title}</h2>
+      <div className="section-content">{children}</div>
     </section>
   );
 };
