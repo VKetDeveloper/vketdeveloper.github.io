@@ -1,15 +1,20 @@
+// components/Section.tsx
+
 import React from 'react';
 
-interface SectionProps {
+export interface SectionProps {
   title: string;
   children: React.ReactNode;
+  style?: React.CSSProperties; // ← これを追加
 }
 
-const Section: React.FC<SectionProps> = ({ title, children }) => (
-  <div className="section">
-    <h2 className="section-title">{title}</h2>
-    <p>{children}</p>
-  </div>
-);
+const Section: React.FC<SectionProps> = ({ title, children, style }) => {
+  return (
+    <section style={style}>
+      <h2>{title}</h2>
+      <div>{children}</div>
+    </section>
+  );
+};
 
 export default Section;

@@ -17,7 +17,7 @@ const NotFound: React.FC = () => {
       <div className="app-layout">
         <Header />
         <main className="main-content">
-          <Section title="404 Not Found" style={{ margin: '0 auto', maxWidth: '600px' }}>
+          <Section title="404 Not Found">
             <h1>404</h1>
             <h2>ページが見つかりません</h2>
             <p>お探しのページは存在しないか、移動されました。</p>
