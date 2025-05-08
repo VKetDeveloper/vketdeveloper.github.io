@@ -92,3 +92,15 @@ footer a {
   margin: 0 10px;
   text-decoration: none;
 }
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* メインコンテンツを縦方向に広げる */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
+}
