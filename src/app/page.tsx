@@ -2,6 +2,14 @@
 
 import React from 'react';
 import dynamic from 'next/dynamic';
+import 'core-js/actual/promise';
+import 'core-js/actual/set';
+import 'core-js/actual/iterator';
+import 'core-js/actual/array/from';
+import 'core-js/actual/array/flat-map';
+import 'core-js/actual/structured-clone';
+import {autoUpdate} from '@floating-ui/react';
+import {useFloating} from '@floating-ui/react';
 import Head from 'next/head';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
