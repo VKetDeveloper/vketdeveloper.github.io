@@ -1,21 +1,18 @@
-'use client'; // App RouterのClient Componentなら必要
+'use client';
 
-import React from 'react';
-import dynamic from 'next/dynamic';
-import 'core-js/actual/promise';
-import 'core-js/actual/set';
-import 'core-js/actual/iterator';
-import 'core-js/actual/array/from';
-import 'core-js/actual/array/flat-map';
-import 'core-js/actual/structured-clone';
-import {autoUpdate} from '@floating-ui/react';
-import {useFloating} from '@floating-ui/react';
+import React, { useEffect } from 'react';
 import Head from 'next/head';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Section from '../../components/Section';
 
+const loadSlider = () => import('../../web-components/Slider');
+
 const Home: React.FC = () => {
+  useEffect(() => {
+    loadSlider(); // カスタム要素の登録を行う
+  }, []);
+
   return (
     <>
       <Head>
@@ -27,6 +24,7 @@ const Home: React.FC = () => {
       </Head>
       <div className="app">
         <Header />
+        <v-slider></v-slider>
         <main>
           <Section title="私たちのミッション">
             ユーザーもスタッフも、Vketに関わるすべての人が気持ちよく活動場所であること。<br />
