@@ -1,6 +1,6 @@
-// components/Link.tsx
+// src/app/link.tsx
 import React from 'react';
-import Link from 'next/link';  // 必要なインポートを追加
+import Link from 'next/link';
 
 interface CustomLinkProps {
   href: string;
@@ -8,9 +8,9 @@ interface CustomLinkProps {
 }
 
 const CustomLink: React.FC<CustomLinkProps> = ({ href, children }) => (
-  <Link href={href}>  {/* Linkコンポーネントを使用 */}
+  <Link href={href}>
     <a style={{ textDecoration: 'none', color: '#333' }}>{children}</a>
   </Link>
 );
 
-export default CustomLink;
+export default CustomLink; // 修正: 'link' → 'CustomLink' をエクスポート
