@@ -1,18 +1,26 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Yusei_Magic} from "next/font/google";
+import { Geist, Geist_Mono, Yusei_Magic } from "next/font/google";
 import "./globals.css";
 
+// ✅ 各フォントに `variable` を指定する
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const YuseiMagic = Yusei_Magic({ weight: "400", subsets: ["latin"] });
+const yuseiMagic = Yusei_Magic({
+  variable: "--font-yusei-magic",
+  subsets: ["latin"],
+  display: "swap",
+  weight: "400",
+});
 
 export const metadata: Metadata = {
   title: "VketREAL有志開発チーム on Github",
@@ -25,10 +33,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${YuseiMagic.variable} antialiased`}
-      >
+    <html lang="ja" className={`${geistSans.variable} ${geistMono.variable} ${yuseiMagic.variable}`}>
+      <body className="antialiased">
         {children}
       </body>
     </html>
