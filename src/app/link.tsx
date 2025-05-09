@@ -1,16 +1,7 @@
-'use client'; // App RouterのClient Componentなら必要
+'use client';
 
-import './globals.css'; // 先に読み込み
+import './globals.css';
 import React from 'react';
-import dynamic from 'next/dynamic';
-import 'core-js/actual/promise';
-import 'core-js/actual/set';
-import 'core-js/actual/iterator';
-import 'core-js/actual/array/from';
-import 'core-js/actual/array/flat-map';
-import 'core-js/actual/structured-clone';
-import {autoUpdate} from '@floating-ui/react';
-import {useFloating} from '@floating-ui/react';
 import Head from 'next/head';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -21,7 +12,7 @@ const Home: React.FC = () => {
   return (
     <>
       <Head>
-        <title>関連イベント |VketREAL有志開発チーム on Github</title>
+        <title>関連イベント | VketREAL有志開発チーム on Github</title>
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
@@ -53,7 +44,6 @@ const Home: React.FC = () => {
               メタバース上にある会場で、アバターなどの3Dアイテムやリアル商品（洋服、PC、飲食物など）を売り買いできる世界最大級のVRイベント。<br />
               バーチャルリアリティマーケットイベントにおけるブースの最多数としてギネス世界記録™に認定されています。
             </p>
-
           </Section>
         </main>
         <Footer />
@@ -62,4 +52,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default link;
