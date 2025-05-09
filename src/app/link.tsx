@@ -1,3 +1,4 @@
+// src/app/link.tsx
 'use client';
 
 import './globals.css';
@@ -8,7 +9,7 @@ import Footer from '../../components/Footer';
 import Section from '../../components/Section';
 import Link from 'next/link';
 
-const Home: React.FC = () => {
+const LinkPage: React.FC = () => {  // コンポーネント名を `LinkPage` に変更
   return (
     <>
       <Head>
@@ -52,4 +53,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default link;
+export default LinkPage;  // 変更後の名前をエクスポート
