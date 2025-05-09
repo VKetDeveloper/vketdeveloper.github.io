@@ -2,10 +2,12 @@
 
 import React, { useEffect } from 'react';
 import Head from 'next/head';
+import 'core-js'
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Section from '../../components/Section';
-
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 const loadSlider = () => import('../../web-components/Slider');
 
 const Home: React.FC = () => {
@@ -24,7 +26,6 @@ const Home: React.FC = () => {
       </Head>
       <div className="app">
         <Header />
-        <v-slider></v-slider>
         <main>
           <Section title="私たちのミッション">
             ユーザーもスタッフも、Vketに関わるすべての人が気持ちよく活動場所であること。<br />

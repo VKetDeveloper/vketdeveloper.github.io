@@ -1,6 +1,10 @@
 // global.d.ts
-declare namespace JSX {
-  interface IntrinsicElements {
-    'v-slider': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
+import 'react';
+
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'v-slider': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
+    }
   }
 }
