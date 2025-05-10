@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@charcoal-ui/react": "^4.5.0",
     "@floating-ui/react": "^0.27.8",
     "core-js": "^3.42.0",
     "element-ui": "^2.15.14",

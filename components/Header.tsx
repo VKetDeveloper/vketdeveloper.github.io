@@ -1,48 +1,32 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
 
 const Header: React.FC = () => (
-  <header>
-    <div className="logo">VketREAL有志開発チーム on Github</div>
+  <header className="flex items-center justify-between px-6 py-4 bg-background border-b border-border shadow-sm">
+    <div className="text-lg font-bold text-foreground">
+      <Link href="/">VketREAL有志開発チーム on GitHub</Link>
+    </div>
     <nav>
-      <ul className="nav-menu">
-        <li><Link href="/">Home</Link></li>
-        {/* <li><Link href="/projects">Projects</Link></li>
-        <li><Link href="/link">Link</Link></li> */}
+      <ul className="flex gap-4 text-sm text-muted-foreground">
+        <li>
+          <Link href="/" className="hover:text-foreground hover:underline">
+            Home
+          </Link>
+        </li>
+        {/* <li>
+          <Link href="/projects" className="hover:text-foreground hover:underline">
+            Projects
+          </Link>
+        </li>
+        <li>
+          <Link href="/link" className="hover:text-foreground hover:underline">
+            Link
+          </Link>
+        </li> */}
       </ul>
     </nav>
-    <style jsx>{`
-      header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 2rem;
-        background-color: #f8f8f8;
-        border-bottom: 1px solid #ddd;
-      }
-
-      .logo {
-        font-weight: bold;
-        font-size: 1.2rem;
-      }
-
-      nav ul.nav-menu {
-        list-style: none;
-        display: flex;
-        gap: 1rem;
-        margin: 0;
-        padding: 0;
-      }
-
-      nav ul.nav-menu li a {
-        text-decoration: none;
-        color: #333;
-      }
-
-      nav ul.nav-menu li a:hover {
-        text-decoration: underline;
-      }
-    `}</style>
   </header>
 );
 
