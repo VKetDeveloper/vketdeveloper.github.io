@@ -6,7 +6,7 @@ import 'core-js'
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Section from '../../components/Section';
-import Swiper from '@/swiper/bundle';
+import Swiper from 'swiper/bundle';
 import Link from 'next/link';
 import 'swiper/css/bundle';
 const loadSlider = () => import('../../web-components/Slider');
