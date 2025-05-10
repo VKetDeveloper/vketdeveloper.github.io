@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
   CardContent,
-} from '@/components/ui/card';
+} from '../src/components/ui/card';
 
 export interface SectionProps extends React.HTMLAttributes<HTMLElement> {
   title: string;
