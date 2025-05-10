@@ -1,7 +1,12 @@
 'use client';
 
 import React from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '@charcoal-ui/react';
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardContent,
+} from '@/components/ui/card';
 
 export interface SectionProps extends React.HTMLAttributes<HTMLElement> {
   title: string;
@@ -13,9 +18,9 @@ const Section: React.FC<SectionProps> = ({ title, children, className = '', styl
     <section className={`mb-6 ${className}`} style={style}>
       <Card>
         <CardHeader>
-          <CardTitle>{title}</CardTitle>
+          <CardTitle className="text-xl">{title}</CardTitle>
         </CardHeader>
-        <CardContent>
+        <CardContent className="text-base text-muted-foreground">
           {children}
         </CardContent>
       </Card>
