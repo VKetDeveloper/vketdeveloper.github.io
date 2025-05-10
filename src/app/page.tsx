@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 import Head from 'next/head';
 import 'core-js';
 import Link from 'next/link';
-import { Card, CardContent, CardHeader, CardTitle } from '@charcoal-ui/react';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'; // ✅ OK
 import { Container } from '@charcoal-ui/react';
 import { Text } from '@charcoal-ui/react';
 import 'swiper/css/bundle';
