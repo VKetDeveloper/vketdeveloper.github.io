@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
     const footerId = "footer";
 
     const footerFixed = () => {
-      const body = document.getElementsByTagName("body")[0];
+      const body = document.documentElement; // document.body ではなく document.documentElement
       const footer = document.getElementById(footerId);
       if (!footer) return;
 
@@ -38,35 +38,27 @@ const Footer: React.FC = () => {
       let defHeight = e.offsetHeight;
 
       const checkBoxSize = () => {
-        if (defHeight != e.offsetHeight) {
+        if (defHeight !== e.offsetHeight) {
           func();
           defHeight = e.offsetHeight;
         }
       };
       const intervalId = setInterval(checkBoxSize, 1000);
-      return intervalId; //interval IDを返す
-    };
-
-    const addEvent = (elm: Window | HTMLElement, listener: string, fn: EventListenerOrEventListenerObject) => {
-      if (elm.addEventListener) {
-        elm.addEventListener(listener, fn, false);
-      } else if ((elm as HTMLElement).attachEvent) {
-        (elm as HTMLElement).attachEvent("on" + listener, fn);
-      }
+      return intervalId; // interval ID を返す
     };
 
     footerFixed(); // 初回ロード時に実行
     const resizeListener = () => footerFixed();
     const intervalId = checkFontSize(footerFixed);
 
-    addEvent(window, "load", resizeListener);
-    addEvent(window, "resize", resizeListener);
+    window.addEventListener("load", resizeListener);
+    window.addEventListener("resize", resizeListener);
 
-    //コンポーネントのアンマウント時にイベントリスナーを解除
+    // コンポーネントのアンマウント時にイベントリスナーを解除
     return () => {
       window.removeEventListener("load", resizeListener);
       window.removeEventListener("resize", resizeListener);
-      clearInterval(intervalId); //intervalIDをclear
+      clearInterval(intervalId); // intervalID を clear
     };
   }, []);
 
