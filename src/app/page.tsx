@@ -1,19 +1,23 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState, lazy, Suspense } from 'react';
 import Head from 'next/head';
 import 'core-js';
 import Link from 'next/link';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'; // ✅ OK
-import { Container } from '@charcoal-ui/react';
-import { Text } from '@charcoal-ui/react';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+// import { Container } from '@charcoal-ui/react'; // 削除
+// import { Text } from '@charcoal-ui/react';    // 削除
 import 'swiper/css/bundle';
+import { cn } from "@/lib/utils" //tailwindユーティリティ
 
-const loadSlider = () => import('../../web-components/Slider');
+// const loadSlider = () => import('../../web-components/Slider'); // エラーの原因：ダイナミックインポート
 
 const Home: React.FC = () => {
+  const [isSliderLoaded, setIsSliderLoaded] = useState(false);
+
   useEffect(() => {
-    loadSlider(); // カスタム要素の登録を行う
+    // loadSlider().then(() => setIsSliderLoaded(true)); //  カスタム要素の登録を行う
+    setIsSliderLoaded(true); // web component をimport しているので、useEffect内でloadする必要はない。
   }, []);
 
   return (
@@ -27,18 +31,18 @@ const Home: React.FC = () => {
         </header>
 
         <main className="py-8">
-          <Container>
+          <div className="container mx-auto px-4">  {/* Container の代替 */}
             <Card className="mb-6">
               <CardHeader>
                 <CardTitle>私たちのミッション</CardTitle>
               </CardHeader>
               <CardContent>
-                <Text>
+                <p className="text-base">
                   ユーザーもスタッフも、Vketに関わるすべての人が気持ちよく活動場所であること。<br />
                   それは、VketREALの開発チームが目指す「Vketのリアルイベントを支える」ことに他なりません。<br />
                   私たちは、Vketのリアルイベントを支えるために、様々な技術を駆使して開発を行っています。<br />
                   それが、私たちが何より大切にしていることです。
-                </Text>
+                </p> {/* Text の代替 */}
               </CardContent>
             </Card>
 
@@ -47,12 +51,12 @@ const Home: React.FC = () => {
                 <CardTitle>募集</CardTitle>
               </CardHeader>
               <CardContent>
-                <Text>
+                <p className="text-base">
                   多様性を重視する有志開発チームでは、「あなたらしさ」を歓迎します。<br />
                   異なるスキルを持った人々が集まることは、生産性と革新性を高めることにつながるからです。<br />
                   あなたが動けば、あなたの未来も、Vketの未来も変わる。 この環境をどう生かすかは、あなた次第です。<br />
                   バーチャル⇆リアル 世界を開く“鍵”になってください。
-                </Text>
+                </p> {/* Text の代替 */}
               </CardContent>
             </Card>
 
@@ -61,10 +65,10 @@ const Home: React.FC = () => {
                 <CardTitle>活動内容</CardTitle>
               </CardHeader>
               <CardContent>
-                <Text>
+                <p className="text-base">
                   VketREALの開発チームは、Vketのリアルイベントを支えるために、様々な技術を駆使して開発を行っています。<br />
                   私たちは、Vketのリアルイベントをより良いものにするために、日々努力しています。
-                </Text>
+                </p> {/* Text の代替 */}
               </CardContent>
             </Card>
 
@@ -73,15 +77,20 @@ const Home: React.FC = () => {
                 <CardTitle>開発</CardTitle>
               </CardHeader>
               <CardContent>
-                <Text>
+                <p className="text-base">
                   <Link href="https://github.com/VKetDeveloper/VketToast" className="text-blue-500 underline">
                     Vket Toast
                   </Link><br />
                   lang: SwiftUI
-                </Text>
+                </p> {/* Text の代替 */}
               </CardContent>
             </Card>
-          </Container>
+            {isSliderLoaded && (
+              <Suspense fallback={<div>Loading Slider...</div>}>
+                <Slider />
+              </Suspense>
+            )}
+          </div>
         </main>
 
         <footer className="px-4 py-6 border-t text-sm text-muted">
