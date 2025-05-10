@@ -11,6 +11,7 @@ import 'swiper/css/bundle';
 import { cn } from "@/lib/utils" //tailwindユーティリティ
 
 // const loadSlider = () => import('../../web-components/Slider'); // エラーの原因：ダイナミックインポート
+// const Slider = lazy(() => import('../../web-components/Slider')); // lazy を使用 //削除
 
 const Home: React.FC = () => {
   const [isSliderLoaded, setIsSliderLoaded] = useState(false);
@@ -85,11 +86,11 @@ const Home: React.FC = () => {
                 </p> {/* Text の代替 */}
               </CardContent>
             </Card>
-            {isSliderLoaded && (
+            {/* isSliderLoaded && (
               <Suspense fallback={<div>Loading Slider...</div>}>
                 <Slider />
               </Suspense>
-            )}
+            ) */}  {/* 削除 */}
           </div>
         </main>
 
