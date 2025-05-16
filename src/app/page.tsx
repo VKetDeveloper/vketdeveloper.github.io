@@ -28,6 +28,9 @@ const Home: React.FC = () => {
       <div className="app">
         <Header />
         <main>
+          <screen title="VketREAL有志開発チーム">
+            <p>VketREAL有志開発チームは、熱意のある有志スタッフの方々とシステムを作って欲しいVketReal札幌チームが連携して生まれたチームです。</p>
+            </screen>
           <Section title="私たちのミッション">
             ユーザーもスタッフも、Vketに関わるすべての人が気持ちよく活動場所であること。<br />
             それは、VketREALの開発チームが目指す「Vketのリアルイベントを支える」ことに他なりません。<br />
