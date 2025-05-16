@@ -7,6 +7,7 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Section from '../../components/Section';
 import Swiper from 'swiper/bundle';
+import Link from 'next/link';
 import 'swiper/css/bundle';
 const loadSlider = () => import('../../web-components/Slider');
 
@@ -27,6 +28,8 @@ const Home: React.FC = () => {
       <div className="app">
         <Header />
         <main>
+          <Section title="VketREAL有志開発チーム">VketREAL有志開発チームは、熱意のある有志スタッフの方々とシステムを作って欲しいVketReal札幌チームが連携して生まれたチームです。
+            </Section>
           <Section title="私たちのミッション">
             ユーザーもスタッフも、Vketに関わるすべての人が気持ちよく活動場所であること。<br />
             それは、VketREALの開発チームが目指す「Vketのリアルイベントを支える」ことに他なりません。<br />
@@ -42,6 +45,10 @@ const Home: React.FC = () => {
           <Section title="活動内容">
             VketREALの開発チームは、Vketのリアルイベントを支えるために、様々な技術を駆使して開発を行っています。<br />
             私たちは、Vketのリアルイベントをより良いものにするために、日々努力しています。
+          </Section>
+          <Section title="開発">
+              <h3><Link href="https://github.com/VKetDeveloper/VketToast">Vket Toast</Link></h3>
+              lang:SwiftUI
           </Section>
         </main>
         <Footer />
