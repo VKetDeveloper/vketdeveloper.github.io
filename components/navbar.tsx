@@ -4,6 +4,7 @@ import NextLink from "next/link";
 import { NavbarItem } from "@heroui/react";
 import { siteConfig } from "@/config/site";
 
+
 export function Navbar() {
   return (
     <nav className="flex bg-gray-100 p-4 space-x-4">
