@@ -250,7 +250,18 @@ __turbopack_context__.s({
 });
 const siteConfig = {
     name: "VketREAL 有志開発チーム on Github",
-    description: "VketREAL 有志開発チームは、VketReal のリアルイベントを支えるために技術開発を行う情熱的なチームです。"
+    description: "VketREAL 有志開発チームは、VketReal のリアルイベントを支えるために技術開発を行う情熱的なチームです。",
+    navItems: [
+        {
+            name: "ホーム",
+            href: "/"
+        },
+        {
+            name: "GitHub",
+            href: "https://github.com/VKetDeveloper",
+            external: true
+        }
+    ]
 };
 }}),
 "[project]/components/SeoHead.tsx [ssr] (ecmascript)": ((__turbopack_context__) => {
@@ -352,15 +363,15 @@ var __turbopack_async_dependencies__ = __turbopack_handle_async_dependencies__([
 ;
 ;
 const Header = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("header", {
-        className: "py-4 border-b border-gray-800",
+        className: "border-b border-gray-800 py-4",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-            className: "container mx-auto px-4 flex items-center justify-between",
+            className: "container mx-auto flex items-center justify-between px-4",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h1", {
                     className: "text-2xl font-bold text-white",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("a", {
-                        href: "/",
                         className: "hover:text-gray-300 transition-colors",
+                        href: "/",
                         children: "VketREAL 有志開発チーム"
                     }, void 0, false, {
                         fileName: "[project]/pages/index.tsx",
@@ -377,10 +388,10 @@ const Header = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$external
                         className: "flex space-x-6",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("li", {
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("a", {
-                                href: "https://github.com/VKetDeveloper",
-                                target: "_blank",
-                                rel: "noopener noreferrer",
                                 className: "text-gray-300 hover:text-white transition-colors flex items-center gap-2",
+                                href: "https://github.com/VKetDeveloper",
+                                rel: "noopener noreferrer",
+                                target: "_blank",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$icons$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["GithubIcon"], {
                                         size: 20
@@ -423,7 +434,7 @@ const Header = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$external
         columnNumber: 3
     }, this);
 const Footer = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("footer", {
-        className: "py-6 border-t border-gray-800",
+        className: "border-t border-gray-800 py-6",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
             className: "container mx-auto px-4 text-center text-gray-400",
             children: [
@@ -452,7 +463,7 @@ const Section = ({ title, children, id })=>/*#__PURE__*/ (0, __TURBOPACK__import
                     children: title
                 }, void 0, false, {
                     fileName: "[project]/pages/index.tsx",
-                    lineNumber: 48,
+                    lineNumber: 52,
                     columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -460,18 +471,18 @@ const Section = ({ title, children, id })=>/*#__PURE__*/ (0, __TURBOPACK__import
                     children: children
                 }, void 0, false, {
                     fileName: "[project]/pages/index.tsx",
-                    lineNumber: 49,
+                    lineNumber: 53,
                     columnNumber: 7
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/pages/index.tsx",
-            lineNumber: 47,
+            lineNumber: 51,
             columnNumber: 5
         }, this)
     }, void 0, false, {
         fileName: "[project]/pages/index.tsx",
-        lineNumber: 46,
+        lineNumber: 50,
         columnNumber: 3
     }, this);
 const Home = ()=>{
@@ -496,30 +507,30 @@ const Home = ()=>{
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$SeoHead$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["SeoHead"], {}, void 0, false, {
                 fileName: "[project]/pages/index.tsx",
-                lineNumber: 72,
+                lineNumber: 76,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(Header, {}, void 0, false, {
                 fileName: "[project]/pages/index.tsx",
-                lineNumber: 73,
+                lineNumber: 77,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("main", {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f40$heroui$2f$alert__$5b$external$5d$__$2840$heroui$2f$alert$2c$__esm_import$29$__["Alert"], {
                         className: "bg-gray-800 text-gray-300",
-                        title: "お知らせ",
                         description: "現在サイトのリニューアル中のため、デザインが崩れている場合があります。",
                         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$icons$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["GithubIcon"], {
                             size: 20
                         }, void 0, false, {
                             fileName: "[project]/pages/index.tsx",
-                            lineNumber: 79,
+                            lineNumber: 82,
                             columnNumber: 17
-                        }, void 0)
+                        }, void 0),
+                        title: "お知らせ"
                     }, void 0, false, {
                         fileName: "[project]/pages/index.tsx",
-                        lineNumber: 75,
+                        lineNumber: 79,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(Section, {
@@ -541,22 +552,22 @@ const Home = ()=>{
                                 children: "VketREAL 有志開発チームは、熱意のある有志スタッフの方々とシステムを作って欲しい VketReal 札幌チームが連携して生まれたチームです。"
                             }, void 0, false, {
                                 fileName: "[project]/pages/index.tsx",
-                                lineNumber: 87,
+                                lineNumber: 91,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/pages/index.tsx",
-                            lineNumber: 82,
+                            lineNumber: 86,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/pages/index.tsx",
-                        lineNumber: 81,
+                        lineNumber: 85,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(Section, {
-                        title: "私たちのミッション",
                         id: "mission",
+                        title: "私たちのミッション",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$framer$2d$motion__$5b$external$5d$__$28$framer$2d$motion$2c$__esm_import$29$__["motion"].p, {
                             initial: {
                                 opacity: 0,
@@ -567,43 +578,43 @@ const Home = ()=>{
                                 y: 0
                             },
                             transition: {
-                                duration: 0.5,
-                                delay: 0.2
+                                delay: 0.2,
+                                duration: 0.5
                             },
                             children: [
                                 "ユーザーもスタッフも、Vket に関わるすべての人が気持ちよく活動できる場所であること。",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/pages/index.tsx",
-                                    lineNumber: 98,
-                                    columnNumber: 57
+                                    lineNumber: 105,
+                                    columnNumber: 13
                                 }, this),
                                 "それは、VketREAL の開発チームが目指す「Vket のリアルイベントを支える」ことに他なりません。",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/pages/index.tsx",
-                                    lineNumber: 99,
-                                    columnNumber: 65
+                                    lineNumber: 108,
+                                    columnNumber: 36
                                 }, this),
                                 "私たちは、Vket のリアルイベントを支えるために、様々な技術を駆使して開発を行っています。",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/pages/index.tsx",
-                                    lineNumber: 100,
-                                    columnNumber: 59
+                                    lineNumber: 110,
+                                    columnNumber: 49
                                 }, this),
                                 "それが、私たちが何より大切にしていることです。"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/pages/index.tsx",
-                            lineNumber: 93,
+                            lineNumber: 98,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/pages/index.tsx",
-                        lineNumber: 92,
+                        lineNumber: 97,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(Section, {
-                        title: "募集",
                         id: "recruitment",
+                        title: "募集",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$framer$2d$motion__$5b$external$5d$__$28$framer$2d$motion$2c$__esm_import$29$__["motion"].p, {
                             initial: {
                                 opacity: 0,
@@ -614,43 +625,43 @@ const Home = ()=>{
                                 y: 0
                             },
                             transition: {
-                                duration: 0.5,
-                                delay: 0.4
+                                delay: 0.4,
+                                duration: 0.5
                             },
                             children: [
                                 "多様性を重視する有志開発チームでは、「あなたらしさ」を歓迎します。",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/pages/index.tsx",
-                                    lineNumber: 110,
-                                    columnNumber: 46
+                                    lineNumber: 121,
+                                    columnNumber: 13
                                 }, this),
                                 "異なるスキルを持った人々が集まることは、生産性と革新性を高めることにつながるからです。",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/pages/index.tsx",
-                                    lineNumber: 111,
+                                    lineNumber: 122,
                                     columnNumber: 56
                                 }, this),
                                 "あなたが動けば、あなたの未来も、Vket の未来も変わる。 この環境をどう生かすかは、あなた次第です。",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/pages/index.tsx",
-                                    lineNumber: 112,
-                                    columnNumber: 64
+                                    lineNumber: 125,
+                                    columnNumber: 34
                                 }, this),
                                 "バーチャル ⇆ リアル 世界を開く“鍵”になってください。"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/pages/index.tsx",
-                            lineNumber: 105,
+                            lineNumber: 115,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/pages/index.tsx",
-                        lineNumber: 104,
+                        lineNumber: 114,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(Section, {
-                        title: "活動内容",
                         id: "activities",
+                        title: "活動内容",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$framer$2d$motion__$5b$external$5d$__$28$framer$2d$motion$2c$__esm_import$29$__["motion"].p, {
                             initial: {
                                 opacity: 0,
@@ -661,31 +672,31 @@ const Home = ()=>{
                                 y: 0
                             },
                             transition: {
-                                duration: 0.5,
-                                delay: 0.6
+                                delay: 0.6,
+                                duration: 0.5
                             },
                             children: [
                                 "VketREAL の開発チームは、Vket のリアルイベントを支えるために、様々な技術を駆使して開発を行っています。",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/pages/index.tsx",
-                                    lineNumber: 122,
-                                    columnNumber: 71
+                                    lineNumber: 140,
+                                    columnNumber: 49
                                 }, this),
                                 "私たちは、Vket のリアルイベントをより良いものにするために、日々努力しています。"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/pages/index.tsx",
-                            lineNumber: 117,
+                            lineNumber: 133,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/pages/index.tsx",
-                        lineNumber: 116,
+                        lineNumber: 132,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(Section, {
-                        title: "開発",
                         id: "development",
+                        title: "開発",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$framer$2d$motion__$5b$external$5d$__$28$framer$2d$motion$2c$__esm_import$29$__["motion"].div, {
                             initial: {
                                 opacity: 0,
@@ -696,26 +707,26 @@ const Home = ()=>{
                                 y: 0
                             },
                             transition: {
-                                duration: 0.5,
-                                delay: 0.8
+                                delay: 0.8,
+                                duration: 0.5
                             },
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h3", {
                                     className: "text-xl font-semibold mb-2",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("a", {
-                                        href: "https://github.com/VKetDeveloper/VketToast",
-                                        target: "_blank",
-                                        rel: "noopener noreferrer",
                                         className: "text-blue-400 hover:text-blue-300 transition-colors",
+                                        href: "https://github.com/VKetDeveloper/VketToast",
+                                        rel: "noopener noreferrer",
+                                        target: "_blank",
                                         children: "Vket Toast"
                                     }, void 0, false, {
                                         fileName: "[project]/pages/index.tsx",
-                                        lineNumber: 133,
+                                        lineNumber: 151,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/pages/index.tsx",
-                                    lineNumber: 132,
+                                    lineNumber: 150,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -723,35 +734,35 @@ const Home = ()=>{
                                     children: "lang: SwiftUI"
                                 }, void 0, false, {
                                     fileName: "[project]/pages/index.tsx",
-                                    lineNumber: 142,
+                                    lineNumber: 160,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/pages/index.tsx",
-                            lineNumber: 127,
+                            lineNumber: 145,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/pages/index.tsx",
-                        lineNumber: 126,
+                        lineNumber: 144,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/pages/index.tsx",
-                lineNumber: 74,
+                lineNumber: 78,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(Footer, {}, void 0, false, {
                 fileName: "[project]/pages/index.tsx",
-                lineNumber: 146,
+                lineNumber: 164,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/pages/index.tsx",
-        lineNumber: 71,
+        lineNumber: 75,
         columnNumber: 5
     }, this);
 };
