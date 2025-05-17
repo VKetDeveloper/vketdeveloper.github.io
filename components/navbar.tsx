@@ -20,7 +20,7 @@ export function Navbar() {
             </a>
           ) : (
             <NextLink href={item.href} key={item.href} passHref>
-              <a className="text-blue-600 hover:underline">
+              <a className="text-blue-600 hover:underline" href={item.href}>
                 {item.name}
               </a>
             </NextLink>
