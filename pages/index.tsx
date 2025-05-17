@@ -1,14 +1,12 @@
 'use client';
 
 import React, { useEffect } from 'react';
-import Head from 'next/head';
 import { motion } from 'framer-motion';
 import { Alert } from "@heroui/alert";
-import { GithubIcon } from '@/components/icons';
-import { cn } from '@/lib/utils';
 import { Divider } from '@heroui/divider';
+import { GithubIcon } from '@/components/icons';
+import { SeoHead } from '@/components/SeoHead';
 
-// Header コンポーネント
 const Header = () => (
   <header className="py-4 border-b border-gray-800">
     <div className="container mx-auto px-4 flex items-center justify-between">
@@ -36,7 +34,6 @@ const Header = () => (
   </header>
 );
 
-// Footer コンポーネント
 const Footer = () => (
   <footer className="py-6 border-t border-gray-800">
     <div className="container mx-auto px-4 text-center text-gray-400">
@@ -45,7 +42,6 @@ const Footer = () => (
   </footer>
 );
 
-// Section コンポーネント（id を props に追加）
 const Section: React.FC<{ title: string; children: React.ReactNode; id?: string }> = ({ title, children, id }) => (
   <section className="py-12" id={id}>
     <div className="container mx-auto px-4">
@@ -55,7 +51,6 @@ const Section: React.FC<{ title: string; children: React.ReactNode; id?: string 
   </section>
 );
 
-// Home コンポーネント
 const Home: React.FC = () => {
   useEffect(() => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -74,13 +69,7 @@ const Home: React.FC = () => {
 
   return (
     <div className="bg-gray-900 min-h-screen">
-      <Head>
-        <title>VketREAL 有志開発チーム on Github</title>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
-        />
-      </Head>
+      <SeoHead />
       <Header />
       <main>
         <Alert
@@ -95,7 +84,9 @@ const Home: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-           <span className="block text-center">VketREAL 有志開発チームは、熱意のある有志スタッフの方々とシステムを作って欲しい VketReal 札幌チームが連携して生まれたチームです。</span>
+            <span className="block text-center">
+              VketREAL 有志開発チームは、熱意のある有志スタッフの方々とシステムを作って欲しい VketReal 札幌チームが連携して生まれたチームです。
+            </span>
           </motion.p>
         </Section>
         <Section title="私たちのミッション" id="mission">
