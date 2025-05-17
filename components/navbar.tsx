@@ -1,9 +1,6 @@
-// src/components/navbar.tsx
 import React from "react";
 import NextLink from "next/link";
-
 import { NavbarItem } from "@heroui/react";
-
 import { siteConfig } from "@/config/site";
 
 export function Navbar() {
@@ -21,7 +18,7 @@ export function Navbar() {
               {item.name}
             </a>
           ) : (
-            <NextLink href={item.href} passHref key={item.href}>
+            <NextLink href={item.href} key={item.href} passHref>
               <a className="text-blue-600 hover:underline">
                 {item.name}
               </a>
