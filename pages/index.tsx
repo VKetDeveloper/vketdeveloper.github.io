@@ -9,6 +9,7 @@ import { GithubIcon } from '@/components/icons';
 import { cn } from '@/lib/utils';
 import { Divider } from '@heroui/divider';
 
+
 // Header コンポーネント
 const Header = () => (
   <header className="py-4 border-b border-gray-800">
@@ -47,14 +48,21 @@ const Footer = () => (
 );
 
 // Section コンポーネント
-const Section: React.FC<{ title: string; children: React.ReactNode }> = ({ title, children }) => (
-  <section className="py-12">
-    <div className="container mx-auto px-4">
-      <h2 className="text-3xl font-bold text-white mb-6 text-center">{title}</h2>
-      <div className="text-gray-300 leading-relaxed">{children}</div>
-    </div>
-  </section>
-);
+type SectionProps = {
+  title: string;
+  children: React.ReactNode;
+  id?: string; // ← ここを追加
+};
+
+const Section = ({ title, children, id }: SectionProps) => {
+  return (
+    <section id={id}>
+      <h2>{title}</h2>
+      <div>{children}</div>
+    </section>
+  );
+};
+
 
 // Home コンポーネント
 const Home: React.FC = () => {
