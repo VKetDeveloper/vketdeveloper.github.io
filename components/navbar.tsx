@@ -1,8 +1,9 @@
 // src/components/navbar.tsx
 import React from "react";
+import NextLink from "next/link";
+
 import { siteConfig } from "@/config/site";
 import { NavbarItem } from "@heroui/react";
-import NextLink from "next/link";
 
 export function Navbar() {
   return (
@@ -11,10 +12,10 @@ export function Navbar() {
         <NavbarItem key={item.href}>
           {item.external ? (
             <a
-              href={item.href}
-              target="_blank"
-              rel="noopener noreferrer"
               className="text-blue-600 hover:underline"
+              href={item.href}
+              rel="noopener noreferrer"
+              target="_blank"
             >
               {item.name}
             </a>
