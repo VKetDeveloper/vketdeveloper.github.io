@@ -4,11 +4,9 @@ import React, { useEffect } from 'react';
 import Head from 'next/head';
 import { motion } from 'framer-motion';
 import { Alert } from "@heroui/alert";
-// import { Link } from '@heroui/link'; // 使用しないのでコメントアウト
 import { GithubIcon } from '@/components/icons';
 import { cn } from '@/lib/utils';
 import { Divider } from '@heroui/divider';
-
 
 // Header コンポーネント
 const Header = () => (
@@ -47,22 +45,15 @@ const Footer = () => (
   </footer>
 );
 
-// Section コンポーネント
-type SectionProps = {
-  title: string;
-  children: React.ReactNode;
-  id?: string; // ← ここを追加
-};
-
-const Section = ({ title, children, id }: SectionProps) => {
-  return (
-    <section id={id}>
-      <h2>{title}</h2>
-      <div>{children}</div>
-    </section>
-  );
-};
-
+// Section コンポーネント（id を props に追加）
+const Section: React.FC<{ title: string; children: React.ReactNode; id?: string }> = ({ title, children, id }) => (
+  <section className="py-12" id={id}>
+    <div className="container mx-auto px-4">
+      <h2 className="text-3xl font-bold text-white mb-6 text-center">{title}</h2>
+      <div className="text-gray-300 leading-relaxed">{children}</div>
+    </div>
+  </section>
+);
 
 // Home コンポーネント
 const Home: React.FC = () => {
@@ -104,7 +95,7 @@ const Home: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            VketREAL 有志開発チームは、熱意のある有志スタッフの方々とシステムを作って欲しい VketReal 札幌チームが連携して生まれたチームです。
+           <span className="block text-center">VketREAL 有志開発チームは、熱意のある有志スタッフの方々とシステムを作って欲しい VketReal 札幌チームが連携して生まれたチームです。</span>
           </motion.p>
         </Section>
         <Section title="私たちのミッション" id="mission">

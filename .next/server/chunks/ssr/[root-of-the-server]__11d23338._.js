@@ -253,7 +253,6 @@ var __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$head$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/head.js [ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$externals$5d2f$framer$2d$motion__$5b$external$5d$__$28$framer$2d$motion$2c$__esm_import$29$__ = __turbopack_context__.i("[externals]/framer-motion [external] (framer-motion, esm_import)");
 var __TURBOPACK__imported__module__$5b$externals$5d2f40$heroui$2f$alert__$5b$external$5d$__$2840$heroui$2f$alert$2c$__esm_import$29$__ = __turbopack_context__.i("[externals]/@heroui/alert [external] (@heroui/alert, esm_import)");
-// import { Link } from '@heroui/link'; // 使用しないのでコメントアウト
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$icons$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/icons.tsx [ssr] (ecmascript)");
 var __turbopack_async_dependencies__ = __turbopack_handle_async_dependencies__([
     __TURBOPACK__imported__module__$5b$externals$5d2f$framer$2d$motion__$5b$external$5d$__$28$framer$2d$motion$2c$__esm_import$29$__,
@@ -281,12 +280,12 @@ const Header = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$external
                         children: "VketREAL 有志開発チーム"
                     }, void 0, false, {
                         fileName: "[project]/pages/index.tsx",
-                        lineNumber: 18,
+                        lineNumber: 16,
                         columnNumber: 9
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/pages/index.tsx",
-                    lineNumber: 17,
+                    lineNumber: 15,
                     columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("nav", {
@@ -303,40 +302,40 @@ const Header = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$external
                                         size: 20
                                     }, void 0, false, {
                                         fileName: "[project]/pages/index.tsx",
-                                        lineNumber: 31,
+                                        lineNumber: 29,
                                         columnNumber: 15
                                     }, this),
                                     "GitHub"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/pages/index.tsx",
-                                lineNumber: 25,
+                                lineNumber: 23,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/pages/index.tsx",
-                            lineNumber: 24,
+                            lineNumber: 22,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/pages/index.tsx",
-                        lineNumber: 23,
+                        lineNumber: 21,
                         columnNumber: 9
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/pages/index.tsx",
-                    lineNumber: 22,
+                    lineNumber: 20,
                     columnNumber: 7
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/pages/index.tsx",
-            lineNumber: 16,
+            lineNumber: 14,
             columnNumber: 5
         }, this)
     }, void 0, false, {
         fileName: "[project]/pages/index.tsx",
-        lineNumber: 15,
+        lineNumber: 13,
         columnNumber: 3
     }, this);
 // Footer コンポーネント
@@ -351,39 +350,48 @@ const Footer = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$external
             ]
         }, void 0, true, {
             fileName: "[project]/pages/index.tsx",
-            lineNumber: 44,
+            lineNumber: 42,
             columnNumber: 5
         }, this)
     }, void 0, false, {
         fileName: "[project]/pages/index.tsx",
-        lineNumber: 43,
+        lineNumber: 41,
         columnNumber: 3
     }, this);
-const Section = ({ title, children, id })=>{
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("section", {
+// Section コンポーネント（id を props に追加）
+const Section = ({ title, children, id })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("section", {
+        className: "py-12",
         id: id,
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h2", {
-                children: title
-            }, void 0, false, {
-                fileName: "[project]/pages/index.tsx",
-                lineNumber: 60,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                children: children
-            }, void 0, false, {
-                fileName: "[project]/pages/index.tsx",
-                lineNumber: 61,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+            className: "container mx-auto px-4",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h2", {
+                    className: "text-3xl font-bold text-white mb-6 text-center",
+                    children: title
+                }, void 0, false, {
+                    fileName: "[project]/pages/index.tsx",
+                    lineNumber: 52,
+                    columnNumber: 7
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                    className: "text-gray-300 leading-relaxed",
+                    children: children
+                }, void 0, false, {
+                    fileName: "[project]/pages/index.tsx",
+                    lineNumber: 53,
+                    columnNumber: 7
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/pages/index.tsx",
+            lineNumber: 51,
+            columnNumber: 5
+        }, this)
+    }, void 0, false, {
         fileName: "[project]/pages/index.tsx",
-        lineNumber: 59,
-        columnNumber: 5
+        lineNumber: 50,
+        columnNumber: 3
     }, this);
-};
 // Home コンポーネント
 const Home = ()=>{
     (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useEffect"])(()=>{
@@ -411,7 +419,7 @@ const Home = ()=>{
                         children: "VketREAL 有志開発チーム on Github"
                     }, void 0, false, {
                         fileName: "[project]/pages/index.tsx",
-                        lineNumber: 87,
+                        lineNumber: 78,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("link", {
@@ -419,18 +427,18 @@ const Home = ()=>{
                         href: "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
                     }, void 0, false, {
                         fileName: "[project]/pages/index.tsx",
-                        lineNumber: 88,
+                        lineNumber: 79,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/pages/index.tsx",
-                lineNumber: 86,
+                lineNumber: 77,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(Header, {}, void 0, false, {
                 fileName: "[project]/pages/index.tsx",
-                lineNumber: 93,
+                lineNumber: 84,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("main", {
@@ -443,12 +451,12 @@ const Home = ()=>{
                             size: 20
                         }, void 0, false, {
                             fileName: "[project]/pages/index.tsx",
-                            lineNumber: 99,
+                            lineNumber: 90,
                             columnNumber: 17
                         }, void 0)
                     }, void 0, false, {
                         fileName: "[project]/pages/index.tsx",
-                        lineNumber: 95,
+                        lineNumber: 86,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(Section, {
@@ -465,15 +473,22 @@ const Home = ()=>{
                             transition: {
                                 duration: 0.5
                             },
-                            children: "VketREAL 有志開発チームは、熱意のある有志スタッフの方々とシステムを作って欲しい VketReal 札幌チームが連携して生まれたチームです。"
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
+                                className: "block text-center",
+                                children: "VketREAL 有志開発チームは、熱意のある有志スタッフの方々とシステムを作って欲しい VketReal 札幌チームが連携して生まれたチームです。"
+                            }, void 0, false, {
+                                fileName: "[project]/pages/index.tsx",
+                                lineNumber: 98,
+                                columnNumber: 12
+                            }, this)
                         }, void 0, false, {
                             fileName: "[project]/pages/index.tsx",
-                            lineNumber: 102,
+                            lineNumber: 93,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/pages/index.tsx",
-                        lineNumber: 101,
+                        lineNumber: 92,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(Section, {
@@ -496,31 +511,31 @@ const Home = ()=>{
                                 "ユーザーもスタッフも、Vket に関わるすべての人が気持ちよく活動できる場所であること。",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/pages/index.tsx",
-                                    lineNumber: 116,
+                                    lineNumber: 107,
                                     columnNumber: 57
                                 }, this),
                                 "それは、VketREAL の開発チームが目指す「Vket のリアルイベントを支える」ことに他なりません。",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/pages/index.tsx",
-                                    lineNumber: 117,
+                                    lineNumber: 108,
                                     columnNumber: 65
                                 }, this),
                                 "私たちは、Vket のリアルイベントを支えるために、様々な技術を駆使して開発を行っています。",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/pages/index.tsx",
-                                    lineNumber: 118,
+                                    lineNumber: 109,
                                     columnNumber: 59
                                 }, this),
                                 "それが、私たちが何より大切にしていることです。"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/pages/index.tsx",
-                            lineNumber: 111,
+                            lineNumber: 102,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/pages/index.tsx",
-                        lineNumber: 110,
+                        lineNumber: 101,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(Section, {
@@ -543,31 +558,31 @@ const Home = ()=>{
                                 "多様性を重視する有志開発チームでは、「あなたらしさ」を歓迎します。",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/pages/index.tsx",
-                                    lineNumber: 128,
+                                    lineNumber: 119,
                                     columnNumber: 46
                                 }, this),
                                 "異なるスキルを持った人々が集まることは、生産性と革新性を高めることにつながるからです。",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/pages/index.tsx",
-                                    lineNumber: 129,
+                                    lineNumber: 120,
                                     columnNumber: 56
                                 }, this),
                                 "あなたが動けば、あなたの未来も、Vket の未来も変わる。 この環境をどう生かすかは、あなた次第です。",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/pages/index.tsx",
-                                    lineNumber: 130,
+                                    lineNumber: 121,
                                     columnNumber: 64
                                 }, this),
                                 "バーチャル ⇆ リアル 世界を開く“鍵”になってください。"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/pages/index.tsx",
-                            lineNumber: 123,
+                            lineNumber: 114,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/pages/index.tsx",
-                        lineNumber: 122,
+                        lineNumber: 113,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(Section, {
@@ -590,19 +605,19 @@ const Home = ()=>{
                                 "VketREAL の開発チームは、Vket のリアルイベントを支えるために、様々な技術を駆使して開発を行っています。",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/pages/index.tsx",
-                                    lineNumber: 140,
+                                    lineNumber: 131,
                                     columnNumber: 71
                                 }, this),
                                 "私たちは、Vket のリアルイベントをより良いものにするために、日々努力しています。"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/pages/index.tsx",
-                            lineNumber: 135,
+                            lineNumber: 126,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/pages/index.tsx",
-                        lineNumber: 134,
+                        lineNumber: 125,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(Section, {
@@ -632,12 +647,12 @@ const Home = ()=>{
                                         children: "Vket Toast"
                                     }, void 0, false, {
                                         fileName: "[project]/pages/index.tsx",
-                                        lineNumber: 151,
+                                        lineNumber: 142,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/pages/index.tsx",
-                                    lineNumber: 150,
+                                    lineNumber: 141,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -645,35 +660,35 @@ const Home = ()=>{
                                     children: "lang: SwiftUI"
                                 }, void 0, false, {
                                     fileName: "[project]/pages/index.tsx",
-                                    lineNumber: 160,
+                                    lineNumber: 151,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/pages/index.tsx",
-                            lineNumber: 145,
+                            lineNumber: 136,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/pages/index.tsx",
-                        lineNumber: 144,
+                        lineNumber: 135,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/pages/index.tsx",
-                lineNumber: 94,
+                lineNumber: 85,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(Footer, {}, void 0, false, {
                 fileName: "[project]/pages/index.tsx",
-                lineNumber: 164,
+                lineNumber: 155,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/pages/index.tsx",
-        lineNumber: 85,
+        lineNumber: 76,
         columnNumber: 5
     }, this);
 };

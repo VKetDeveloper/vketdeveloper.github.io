@@ -688,6 +688,10 @@ img, video {
   margin-top: .5rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -2792,6 +2796,11 @@ img, video {
   padding-bottom: 2rem;
 }
 
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .\!pb-0 {
   padding-bottom: 0 !important;
 }
@@ -3018,6 +3027,10 @@ img, video {
 
 .leading-\[32px\] {
   line-height: 32px;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
 }
 
 .tracking-tight {
