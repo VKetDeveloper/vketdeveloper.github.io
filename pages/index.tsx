@@ -2,31 +2,28 @@
 
 import React, { useEffect } from 'react';
 import Head from 'next/head';
-// import 'core-js' // core-js は通常、直接インポートしません。polyfill が必要な場合は、エントリポイントで設定します。
 import { motion } from 'framer-motion';
-import {Alert} from "@heroui/alert";
-// '@heroui/link' を使用しているが、エラーが出ているため、aタグで代替
-// import { Link } from '@heroui/link';
-import { GithubIcon } from '@/components/icons'; // Githubアイコンを使用
-import { cn } from "@/lib/utils" // utility関数
-import {Divider} from "@heroui/divider";
-// カスタムコンポーネントとスタイルを定義
+import { Alert } from "@heroui/alert";
+// import { Link } from '@heroui/link'; // 使用しないのでコメントアウト
+import { GithubIcon } from '@/components/icons';
+import { cn } from '@/lib/utils';
+import { Divider } from '@heroui/divider';
+
+// Header コンポーネント
 const Header = () => (
   <header className="py-4 border-b border-gray-800">
     <div className="container mx-auto px-4 flex items-center justify-between">
       <h1 className="text-2xl font-bold text-white">
-        {/* '@heroui/link' の代わりに a タグを使用 */}
         <a href="/" className="hover:text-gray-300 transition-colors">
-           VketREAL 有志開発チーム
+          VketREAL 有志開発チーム
         </a>
       </h1>
       <nav>
         <ul className="flex space-x-6">
           <li>
-            {/* '@heroui/link' の代わりに a タグを使用 */}
             <a
               href="https://github.com/VKetDeveloper"
-              target="_blank"  // 外部リンクは新しいタブで開く
+              target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-white transition-colors flex items-center gap-2"
             >
@@ -40,6 +37,7 @@ const Header = () => (
   </header>
 );
 
+// Footer コンポーネント
 const Footer = () => (
   <footer className="py-6 border-t border-gray-800">
     <div className="container mx-auto px-4 text-center text-gray-400">
@@ -48,28 +46,29 @@ const Footer = () => (
   </footer>
 );
 
+// Section コンポーネント
 const Section: React.FC<{ title: string; children: React.ReactNode }> = ({ title, children }) => (
   <section className="py-12">
     <div className="container mx-auto px-4">
-      <h2
-        className="text-3xl font-bold text-white mb-6 text-center"
-      >
-        {title}
-      </h2>
+      <h2 className="text-3xl font-bold text-white mb-6 text-center">{title}</h2>
       <div className="text-gray-300 leading-relaxed">{children}</div>
     </div>
   </section>
 );
 
+// Home コンポーネント
 const Home: React.FC = () => {
   useEffect(() => {
-    // スムーズスクロールのための処理
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
+      anchor.addEventListener('click', (e) => {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')!)?.scrollIntoView({
-          behavior: 'smooth'
-        });
+        const href = anchor.getAttribute('href');
+        if (href) {
+          const target = document.querySelector(href);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
       });
     });
   }, []);
@@ -84,14 +83,13 @@ const Home: React.FC = () => {
         />
       </Head>
       <Header />
-
       <main>
-              <Alert
-        className="bg-gray-800 text-gray-300"
-        title="お知らせ"
-        description="現在サイトのリニューアル中のため、デザインが崩れている場合があります。"
-        icon={<GithubIcon size={20} />}
-        ></Alert>
+        <Alert
+          className="bg-gray-800 text-gray-300"
+          title="お知らせ"
+          description="現在サイトのリニューアル中のため、デザインが崩れている場合があります。"
+          icon={<GithubIcon size={20} />}
+        />
         <Section title="VketREAL 有志開発チーム">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -144,7 +142,7 @@ const Home: React.FC = () => {
             <h3 className="text-xl font-semibold mb-2">
               <a
                 href="https://github.com/VKetDeveloper/VketToast"
-                target="_blank"  // 外部リンク
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:text-blue-300 transition-colors"
               >
